@@ -1,0 +1,14 @@
+@import'../variables';
+
+.numbers{
+    display: flex;
+    justify-content:center;
+    width: 100%;
+    background: $lite-green;
+    li{
+        color: $color-green;
+        text-transform: uppercase;
+        list-style-type: none;
+        padding: 10px;
+    }
+}
