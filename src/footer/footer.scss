@@ -1,0 +1,15 @@
+@import"../variables";
+.footer{     
+    width: 100%;
+    max-width: 1600px;
+    background: $lite-green;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+   p{
+    text-transform: uppercase;
+    color: $color-green;
+    padding: 40px 0;
+   } 
+
+}
