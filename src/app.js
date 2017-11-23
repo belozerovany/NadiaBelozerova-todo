@@ -1,7 +1,7 @@
-import React from 'react';
-import ReactDom from 'react-dom';
 
-import { Navigation } from './Navigation';
+import ReactDom from 'react-dom';
+import { App } from './app.component'
+
 
 // const paint = () => {
 //     const time = React.createElement('time',null, `Time is ${new Date().toLocaleTimeString()}`);
@@ -19,12 +19,7 @@ import { Navigation } from './Navigation';
 // }
 //setInterval(paint, 1000);
 
-const Component = (
-    <div>
-        <h1>'Hello, reacr easycode!'</h1>
-        <Navigation/>
-    </div>
-); 
-ReactDom.render (Component, document.getElementById('app'));
+
+ReactDom.render (App, document.getElementById('app'));
 
 
