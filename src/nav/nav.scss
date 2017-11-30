@@ -1,0 +1,26 @@
+@import"../variables";
+.navigation{
+    widows: 100%;
+    margin: 0 auto;
+    text-align: center;
+    display: inline-block;
+    ul{
+        display: flex;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        li{
+            text-transform: uppercase;
+            a{
+                display: block;
+                padding: 5px 10px;
+                color:#4ba45b;
+                text-decoration:none;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+   
+}
