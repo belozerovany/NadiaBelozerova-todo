@@ -15,6 +15,9 @@ const plugins = [
     new textPlugin({
         filename: 'main-[contenthash].css',
         allChunks: true
+    }),
+    new webpack.ProvidePlugin({
+        React: 'react'
     })
 ];
 
@@ -36,7 +39,11 @@ module.exports = {
                 exclude: path.resolve(__dirname, 'node_modules'),
                 use: {
                     loader: 'babel-loader',
-                    options: { presets: ['env', 'react'] }
+                    options: { 
+                        presets: ['env', 'react'],
+                        plugins: ['transform-class-properties'] //add for react ()=>
+                     },
+                   
                 }
             },
 
@@ -58,6 +65,6 @@ module.exports = {
     devServer: {
         contentBase: path.resolve(__dirname, 'dist'),
         publicPath: '/',
-        port: 9000
+        port: 3000
     }
 };
