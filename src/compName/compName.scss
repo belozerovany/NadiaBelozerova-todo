@@ -1,26 +1,26 @@
-@import'../variables.scss';
+@import '../variables.scss';
 
-.ul{
-    width: 100%;
-    margin: 0 auto;
-    padding: 0;
-    margin: 0;
-    &__li {
-        list-style-type: none;
-    }    
+.block-users {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  &__li {
+    list-style-type: none;
+  }
 }
+
 .user {
-    display: flex;
-    justify-content: space-around;
-    border-bottom: 1px solid $color-green;
-    p {
-        font-weight: 500;
-        color: $color-green;
-        list-style-type: none;
-        span {
-            color: $color-green;
-            text-transform: uppercase;
-        }
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid $color-green;
+  p {
+    font-weight: 500;
+    color: $color-green;
+    list-style-type: none;
+    span {
+      color: $color-green;
+      text-transform: uppercase;
     }
-}  
+  }
+}
 
