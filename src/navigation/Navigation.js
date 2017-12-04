@@ -9,7 +9,7 @@ export const Navigation = () =>{
         <nav className="main-nav">
             <ul>
                 {
-                    items.map((i, index) =>
+                    items.map((i, index) => 
                         <li key = {index}>
                             <a href ={'#!/'+i.toLowerCase()}>{i}</a>
                         </li>
