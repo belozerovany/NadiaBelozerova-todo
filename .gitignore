@@ -58,4 +58,4 @@ typings/
 .env
 dist/
 packaje-lock.json
-node_modules//dist
+node_modules/

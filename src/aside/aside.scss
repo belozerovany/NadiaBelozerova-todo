@@ -1,14 +1,17 @@
 @import'../variables';
 
 .aside{
-    width: 200px;
-    height: 300px;
+    width: 60%;
     background: $lite-green;
     color: $color-green;
     vertical-align: middle;
-    text-align: center;
+    text-align: left;
     margin-right: 20px;
-    p{
-       line-height: 300px;
-    }
+    padding: 10px;
+  &__users{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 20px;
+    justify-content: space-between;
+  }
 }
