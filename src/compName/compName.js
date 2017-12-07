@@ -1,4 +1,3 @@
-import React from 'react';
 import './compName.scss';
 
 export const ComponentName = ({ firstName, lastName, age }) => (
@@ -14,15 +13,15 @@ export const ListComponentName = (props) => {
   return (
     <ul className="block-users">
       {
-        users.map((item, index) =>
-          (<li className="block-users__li" key={index}>
+        users.map((item, index) => (
+          <li className="block-users__li" key={index}>
             <ComponentName
               firstName={item.firstName}
               lastName={item.lastName}
               age={item.age}
             />
-           </li>)
-        )
+          </li>
+          ))
       }
     </ul>
   );

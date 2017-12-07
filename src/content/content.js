@@ -1,9 +1,7 @@
-import React from 'react';
-import ReactDom from 'react-dom';
-import { ComponentName, ListComponentName } from '../compName';
+import { ListComponentName } from '../compName';
 import './content.scss';
 
-let users = [
+const users = [
   {
     firstName: 'Petia',
     lastName: 'Petrov',
@@ -20,12 +18,11 @@ let users = [
     age: '25'
   }
 ];
-export const Content = () => {
-  return (
-    <div className="content">
-      <ListComponentName
-        users={users}
-      />
-    </div>
-  )
-}
+
+export const Content = () => (
+  <div className="content">
+    <ListComponentName
+      users={users}
+    />
+  </div>
+);
