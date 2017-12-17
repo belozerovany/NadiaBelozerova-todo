@@ -50,6 +50,7 @@ export class Aside extends React.Component {
           />
           {loading && <span>Loading...</span>}
           {this.state.click && <Posts post={this.state.posts} />}
+          
         </div>
       </div>
     );

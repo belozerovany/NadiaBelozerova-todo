@@ -1,4 +1,6 @@
 import { ListComponentName } from '../compName';
+import { BtnBg } from '../btnBg';
+import { Timer } from '../timer';
 import './content.scss';
 
 const users = [
@@ -24,5 +26,7 @@ export const Content = () => (
     <ListComponentName
       users={users}
     />
+    <Timer />
+    <BtnBg />
   </div>
 );
